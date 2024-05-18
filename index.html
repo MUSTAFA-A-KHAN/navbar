@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <script src="https://unpkg.com/htmx.org@1.9.2/dist/htmx.min.js"></script>
-    <link href="navbar/style/output.css" rel="stylesheet">
+    <link href="/style/output.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="home">
 
         
-        <nav class="bg-[url('navbar/style/images/your-image.jpg')] text-red-600 fixed w-full top-0 h-20 p-4 flex">
+        <nav class="bg-[url('/style/images/your-image.jpg')] text-red-600 fixed w-full top-0 h-20 p-4 flex">
             
-            <div name="q" hx-swap="innerHTML" hx-get="navbar/pages/home.html" hx-trigger="load" hx-target="#content" class="inline-block"></div>
+            <div name="q" hx-swap="innerHTML" hx-get="/pages/home.html" hx-trigger="load" hx-target="#content" class="inline-block"></div>
             <button> <img class="h-16" src="/style/images/dino.gif" width="200"></button>
             <button name="q" hx-swap="innerHTML" hx-get="" hx-trigger="click" hx-target="#content" class="bg-red-800 text-white px-4 py-2 rounded-md ml-10 hover:bg-transparent" >Show Images</button>
             <button name="q" hx-swap="innerHTML" hx-get="" hx-trigger="click" hx-target="#content" class="bg-red-800 text-white px-4 py-2 rounded-md ml-10 hover:bg-transparent">Show Images</button>
